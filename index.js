@@ -1,6 +1,9 @@
 var express = require('express');
 var app = express();
 // var pg = require('pg');
+var boryparser = require('bory-parser')
+// parse application/json
+app.use(bodyParser.json())
 
 app.set('port', (process.env.PORT || 5000));
 
