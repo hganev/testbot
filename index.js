@@ -20,8 +20,12 @@ app.get('/hellow', function(req, res) {
   res.send('world!');
 });
 
-app.post('/webhook', function(req, res) {
-  res.send('hello world');
+app.get('/webhook', function (req, res) {
+  if (req.query['hub.verify_token'] === 'test1234.') {
+    res.send(req.query['hub.challenge']);
+  } else {
+    res.send('Error, wrong validation token');    
+  }
 });
 
 app.post('/webhook1', function(req, res) {
