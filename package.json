@@ -1,0 +1,22 @@
+{
+  "name": "testbot",
+  "version": "1.0.0",
+  "description": "A test bot ",
+  "main": "index.js",
+  "scripts": {
+    "test": "haha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hganev/testbot.git"
+  },
+  "author": "Hristo Ganev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hganev/testbot/issues"
+  },
+  "homepage": "https://github.com/hganev/testbot#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
