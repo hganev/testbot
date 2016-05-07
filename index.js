@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 // var pg = require('pg');
-var boryparser = require('bory-parser')
+var bodyparser = require('body-parser')
 // parse application/json
 app.use(bodyParser.json())
 
