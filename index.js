@@ -1,5 +1,6 @@
 var express = require('express');
 var app = express();
+var request = require('request');
 // var pg = require('pg');
 var bodyparser = require('body-parser')
 // parse application/json
@@ -42,7 +43,7 @@ app.post('/webhook/', function (req, res) {
     if (event.message && event.message.text) {
       text = event.message.text;
       console.log(text);
-      
+
 	  sendTextMessage(sender, "Text received, echo: "+ text.substring(0, 200));
     }
   }
